@@ -1,20 +1,11 @@
 import "../Style/Home.css"
+import Nav from "../Components/Nav"
 export default function Home() {
     return (
 
         <div className="home-container">
 
-            <nav>
-                <img id="logo" src="Quizee_logo.png" alt="" />
-                <ul>
-                    <li style={{
-                        borderBottom: "2px solid blue"
-                    }}>Home</li>
-                    <li>About Us</li>
-                    <button >Login</button>
-                    <button>Register</button>
-                </ul>
-            </nav>
+          <Nav />
             <header>
                 <section>
                     <h1>Challenge Your Mind.</h1>

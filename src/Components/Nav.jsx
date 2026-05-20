@@ -3,14 +3,17 @@ import Login from "../Pages/Login"
 import "../Style/Nav.css"
 export default function Nav(){
     return(
-        <nav className="nav">
-            <h1>Quizee !</h1>
-            <ul>
-                <li>Home</li>
-                <li>Help</li>
-                <li onClick={Navigate(<Login />)}>LogOut</li>
-                
-            </ul>
-        </nav>
+         <nav className="navbar">
+                <img id="logo" src="Quizee_logo.png" alt="" />
+                <ul>
+                    <li style={{
+                        borderBottom: "2px solid blue"
+                    }}>Home</li>
+                    <li>About Us</li>
+                    <li>Categories</li>
+                    <button >Login</button>
+                    <button>Register</button>
+                </ul>
+            </nav>
     )
 }

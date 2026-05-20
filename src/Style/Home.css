@@ -7,44 +7,6 @@
     color: black;
     font-family: var(--font_famliy2);
 }
-.home-container nav{
-    height: 60px;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    background-color: white;
-    z-index: 1000;
-}
-.home-container ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 30px;
-    height: max-content;
-    padding: 30px;
-}
-.home-container nav > li{
-    padding: 10px;
-}
-
-.home-container ul > button{
-    padding: 8px 20px 6px 20px;
-    border: none;
-    border-radius: 7px;
-    background-color: var(--main-bg);
-    color: white;
-    
-}
-
-#logo{
-    height: 40px;
-    margin-left: 20px;
-
-}
 .home-container header{
     height: 90vh;
     width: 98vw;

@@ -4,12 +4,13 @@ import SingUp from "./Pages/SignUp";
 import Home from "./Pages/Home";
 import "./App.css"
 import {BrowserRouter , Routes,Route,Link}from 'react-router-dom'
+import Categories from "./Components/Categories";
 
 
 function App() {
   return (
       <BrowserRouter>
-      <Home />
+      <Categories />
         </BrowserRouter>
   );
 }
