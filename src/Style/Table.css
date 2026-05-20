@@ -1,0 +1,7 @@
+.table-container{
+    margin-top: 50px;
+    width: 100%;
+    height: max-content;
+    padding: 50px 100px;
+    font-family: var(--font-family1);
+}

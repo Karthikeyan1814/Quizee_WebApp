@@ -1,0 +1,30 @@
+.step-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 430px;
+    left: 290px;
+
+}
+
+.circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: gray;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.active{
+    background-color: var(--main-bg);
+}

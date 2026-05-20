@@ -1,0 +1,57 @@
+.message-container{
+    height: max-content;
+    width: 91vw;
+    margin-left: 70px;
+    padding: 50px 50px 100px 50px;
+    background-color: rgba(211, 211, 211, 0.441);
+    color: black;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.No_record{
+    color: Red;
+    font-size: larger;
+    font-family: var(--font-family2);
+    margin-top: 100px;
+    margin-left: 550px;
+    font-weight: 500;
+}
+.new_message{
+    padding: 10px 30px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-family: var(--font-family2);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+}
+.message-tbl{
+    font-family: var(--font-family2 );
+    color: black;
+    width: 100%;
+}
+.message-tbl td{
+    padding: 10px 40px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.message-tbl td:hover{
+    box-shadow: var(--box-shadow);
+    background-color: var(--bg-color);
+    transform: scale(1.01);
+}
+.green-dot{
+    font-size: 100px;
+    top: -60px;
+    position: absolute;
+    right: 60px;
+    color: rgb(3, 255, 3);
+    
+}
