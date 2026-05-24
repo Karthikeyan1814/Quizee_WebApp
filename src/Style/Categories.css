@@ -1,20 +1,8 @@
-#book{
-    height: 200px;
-}
-.cat-header{
-    padding: 130px 100px;
-    height: 30vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background:linear-gradient(90deg, white, rgba(77,107,226,0.52));
-    font-family: var(--font-family2);
-    gap: 150px;
-}
+
 .cat-container{
     display: grid;
-    height: max-content;
+    min-height: 10vh;
+    max-height: max-content;
     width: 100vw;
     padding: 50px 150px;
     grid-template-columns: repeat(4,1fr);
@@ -22,6 +10,8 @@
 }
 .cat-card{
     height: 250px;
+    min-width: 60px;
+    min-height: 150px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -58,4 +48,41 @@
     font-weight: 800;
     font-family: var(--font-family2);
     margin-top: 20px;
+}
+.hori-card{
+    max-height: 120px;
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0PX 40PX;
+    flex-shrink: 0;
+    border-radius: 10px;
+    font-size: small;
+    color: black;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+      border: 1px solid rgba(0, 0, 0, 0.227);
+         background-color: white;
+}
+.hori-card img{
+    max-height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color:white;
+}
+.hori-card:nth-child(1){background-color: lightpink;}
+.hori-card:nth-child(2){background-color: lightblue;}
+.hori-card:nth-child(3){background-color: lightgreen ;}
+.hori-card:nth-child(4){background-color: lightgrey;}
+.hori-card:nth-child(5){background-color: lightpink;}
+.hori-card:nth-child(6){background-color: lightblue;}
+.hori-card:nth-child(7){background-color: lightgreen ;}
+.hori-card:nth-child(8){background-color: lightgrey;}
+.hori-card:hover{
+    color:white;
+    transform: scale(1.01);
+    border: 1px solid blue;
+    background-color:var(--main-bg);
 }

@@ -1,4 +1,4 @@
-import LoginForm from "../Components/LoginForm";
+import LoginForm from "../Components/Header";
 import AuthLayout from "../Components/AuthLayout";
 export default function Login (){
  
