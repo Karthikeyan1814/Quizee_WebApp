@@ -44,3 +44,8 @@
     transform: scale(1.06);
     background-color: rgba(246, 255, 0, 0.832);
 }
+.list-view-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 4vw;
+}

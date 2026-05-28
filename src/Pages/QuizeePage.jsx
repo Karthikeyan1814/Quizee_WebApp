@@ -10,7 +10,7 @@ export default function QuizePage() {
     const quiz = sample1[0]
 
     const questionData = quiz.questions[currentQuestion]
-
+    
     const nextQuestion = () => {
 
         if (currentQuestion < quiz.questions.length - 1) {

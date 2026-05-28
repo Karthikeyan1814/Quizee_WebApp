@@ -13,7 +13,7 @@ import QuizePage from "./Pages/QuizeePage";
 function App() {
   return (
       <BrowserRouter>
-      <QuizePage />
+      <Overview />
         </BrowserRouter>
   );
 }

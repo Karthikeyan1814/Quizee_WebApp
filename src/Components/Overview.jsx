@@ -4,6 +4,7 @@ import Header from "./Header"
 import categories from "../Data/categories"
 import "../Style/Categories.css"
 import CategoriesCard from "./CategoriesCard";
+import QuizeList from "./QuizeList"
 import Nav from "./Nav"
 import Sibebar from "./Sidebar"
 export default function Overview() {
@@ -13,14 +14,14 @@ export default function Overview() {
         e.preventDefault();
         reference.current.scrollLeft += e.deltaY;
     }
-    const scrollLast=(e)=>{
-        reference.current.scrollLeft +=500
+    const scrollLast = (e) => {
+        reference.current.scrollLeft += 500
     }
-    const scrollFirst=(e)=>{
-        reference.current.scrollLeft -=500
+    const scrollFirst = (e) => {
+        reference.current.scrollLeft -= 500
     }
     return (
-        <div Overview="over-container">
+        <div className="over-container">
             <Nav />
             <Sibebar />
             <div className="over-side">
@@ -31,7 +32,7 @@ export default function Overview() {
                     <h3>Top Categories</h3>
                     <div className="over-cat-box" onWheel={handle_scroll} ref={reference}>
 
-                       
+
                         {categories.slice(0, 9).map((item, index) => (
                             <CategoriesCard
                                 key={index}
@@ -40,11 +41,18 @@ export default function Overview() {
                                 change_cat="true"
                             />
                         ))}
-                         <img onClick={scrollLast} src="./next1.svg" id="cat-next" alt="" />
-                         
+                        <img onClick={scrollLast} src="./next1.svg" id="cat-next" alt="" />
+
 
 
                     </div>
+                </section>
+                <section>
+                    <section className="list-view-box">
+                        <h3>Trending Qizee</h3>
+                        <p style={{cursor:"pointer",color:"blue"}}>View All &gt;</p>
+                    </section>
+                    <QuizeList cut={5} />
                 </section>
             </div>
         </div>
